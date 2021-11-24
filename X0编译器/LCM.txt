@@ -1,0 +1,24 @@
+/* 求两个数的最小公倍数*/
+
+main{
+    int a;
+    int b;
+    int c;
+    int x;
+    int y;
+    read a;
+    read b;
+    if(a < b){
+        //令a为较大的数
+        c = a;
+        a = b;
+        b = c;
+    }
+    x = a;
+    y = b;
+    while (x % y != 0)
+    {
+        x = x + a;
+    }
+    write x;
+}

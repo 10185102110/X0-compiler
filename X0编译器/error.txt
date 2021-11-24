@@ -1,0 +1,9 @@
+main{
+    int a;
+    int b[5];
+    int c[];
+    char d;
+    if(a &= b){
+        a = 1;
+    }
+}

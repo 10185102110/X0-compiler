@@ -1,0 +1,26 @@
+/* 求2~100之间的全部素数*/
+
+main {
+    int num;
+    int i;    // 用于遍历
+    int fac;
+    int tag;  // 布尔符号
+    i = 2;
+    num = 100;
+    while(i <= num){
+        tag = 0;
+        fac = 2;
+        while(fac < i){
+            if(i%fac == 0){
+                tag = 1;
+            }
+            fac = fac+1;
+        }
+        if(tag == 0){
+            write i;  // 输出素数
+        }
+        i = i+1;
+    }
+}
+
+
